@@ -130,7 +130,7 @@ export function Cuestionario2() {
             </div>
             <div className="flex items-center space-x-2">
               <Checkbox id="q5-a2" />
-              <Label htmlFor="q5-a2">Las variables se declaran con "var" y las constantes con "const"</Label>
+              <Label htmlFor="q5-a2">Las variables se declaran con var y las constantes con const</Label>
             </div>
             <div className="flex items-center space-x-2">
               <Checkbox id="q5-a3" />
@@ -180,7 +180,7 @@ export function Cuestionario2() {
             <div className="flex items-center space-x-2">
               <Checkbox id="q7-a1" />
               <Label htmlFor="q7-a1">
-                Las funciones declarativas se definen con la palabra clave "function", mientras que las funciones de
+                Las funciones declarativas se definen con la palabra clave function, mientras que las funciones de
                 expresión se asignan a una variable
               </Label>
             </div>
