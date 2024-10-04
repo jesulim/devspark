@@ -24,52 +24,25 @@ To read more about using these font, please visit the Next.js documentation:
 - Pages Directory: https://nextjs.org/docs/pages/building-your-application/optimizing/fonts
 **/
 import Link from "next/link"
+import sparkLogo from "../../app/spark_logo.svg"
+import Image from "next/image"
+import heroImage from "../../app/hero.jpeg"
 
 export function Landing() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-background">
-        <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <SparkleIcon />
-          <span className="sr-only">Spark</span>
+        <Link href="#" className="flex items-center justify-center gap-1" prefetch={false}>
+          <Image src={sparkLogo} alt="Spark" width={36} height={36} />
+          <span className="text-black text-xl">spark</span>
         </Link>
-        <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            Developers
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            Companies
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            About
-          </Link>
-          <Link
-            href="#"
-            className="text-sm font-medium hover:underline underline-offset-4 text-primary-foreground"
-            prefetch={false}
-          >
-            Contact
-          </Link>
-        </nav>
       </header>
       <main className="flex-1">
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-2 lg:gap-12 xl:gap-24">
             <div className="space-y-4">
               <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl">
-                Enciende tu carrera. Codifica tu futuro.
+                Enciende tu <span className="text-[#5ce1e6]">carrera</span>. Codifica tu <span className="text-[#8c52ff]">futuro</span>.
               </h1>
               <p className="max-w-[600px] text-muted-foreground md:text-xl">
                 Spark conecta talentos emergentes de desarrolladores con oportunidades emocionantes en empresas
@@ -81,19 +54,12 @@ export function Landing() {
                   className="inline-flex h-10 items-center justify-center rounded-md bg-primary px-8 text-sm font-medium text-primary-foreground shadow transition-colors hover:bg-primary/90 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
                   prefetch={false}
                 >
-                  Únete como desarrollador
-                </Link>
-                <Link
-                  href="#"
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-input bg-background px-8 text-sm font-medium shadow-sm transition-colors hover:bg-accent hover:text-accent-foreground focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-ring disabled:pointer-events-none disabled:opacity-50"
-                  prefetch={false}
-                >
-                  Contrata con Spark
+                  Inicia el test
                 </Link>
               </div>
             </div>
-            <img
-              src="/placeholder.svg"
+            <Image
+              src={heroImage}
               width="550"
               height="550"
               alt="Hero"
