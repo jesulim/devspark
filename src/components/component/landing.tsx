@@ -30,7 +30,7 @@ export function Landing() {
     <div className="flex flex-col min-h-[100dvh]">
       <header className="px-4 lg:px-6 h-14 flex items-center bg-background">
         <Link href="#" className="flex items-center justify-center" prefetch={false}>
-          <SparkleIcon className="h-6 w-6 text-primary" />
+          <SparkleIcon />
           <span className="sr-only">Spark</span>
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
@@ -132,21 +132,21 @@ export function Landing() {
         <section className="w-full py-12 md:py-24 lg:py-32">
           <div className="container grid gap-6 px-4 md:px-6 lg:grid-cols-3 lg:gap-12">
             <div className="grid gap-1 rounded-lg bg-background p-4">
-              <RocketIcon className="h-8 w-8 text-primary" />
+              <RocketIcon />
               <h3 className="text-xl font-bold">Impulsa tu carrera</h3>
               <p className="text-muted-foreground">
                 Encuentra oportunidades de trabajo emocionantes que te ayudarán a crecer y desarrollar tus habilidades.
               </p>
             </div>
             <div className="grid gap-1 rounded-lg bg-background p-4">
-              <BriefcaseIcon className="h-8 w-8 text-primary" />
+              <BriefcaseIcon />
               <h3 className="text-xl font-bold">Contrata al mejor talento</h3>
               <p className="text-muted-foreground">
                 Accede a una red de desarrolladores emergentes y encuentra al candidato perfecto para tu empresa.
               </p>
             </div>
             <div className="grid gap-1 rounded-lg bg-background p-4">
-              <BoltIcon className="h-8 w-8 text-primary" />
+              <BoltIcon />
               <h3 className="text-xl font-bold">Enciende tu futuro</h3>
               <p className="text-muted-foreground">
                 Spark te ayudará a dar el siguiente paso en tu carrera o a encontrar al desarrollador que necesitas.
@@ -170,10 +170,9 @@ export function Landing() {
   )
 }
 
-function BoltIcon(props) {
+function BoltIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -191,10 +190,9 @@ function BoltIcon(props) {
 }
 
 
-function BriefcaseIcon(props) {
+function BriefcaseIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -212,10 +210,9 @@ function BriefcaseIcon(props) {
 }
 
 
-function RocketIcon(props) {
+function RocketIcon() {
   return (
     <svg
-      {...props}
       xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
@@ -235,11 +232,9 @@ function RocketIcon(props) {
 }
 
 
-function SparkleIcon(props) {
+function SparkleIcon() {
   return (
     <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
       width="24"
       height="24"
       viewBox="0 0 24 24"
