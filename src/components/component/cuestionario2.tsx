@@ -251,8 +251,8 @@ export function Cuestionario2() {
             <div className="flex items-center space-x-2">
               <Checkbox id="q9-a2" />
               <Label htmlFor="q9-a2">
-                Las clases se definen con la palabra clave "class", mientras que los objetos se crean con la palabra
-                clave "new"
+                Las clases se definen con la palabra clave class, mientras que los objetos se crean con la palabra
+                clave new
               </Label>
             </div>
             <div className="flex items-center space-x-2">
