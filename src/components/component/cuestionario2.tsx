@@ -19,7 +19,7 @@ To read more about using these font, please visit the Next.js documentation:
 **/
 import { Checkbox } from "@/components/ui/checkbox"
 import { Label } from "@/components/ui/label"
-import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export function Cuestionario2() {
   return (
@@ -299,7 +299,7 @@ export function Cuestionario2() {
           </div>
         </div>
         <div className="flex justify-center pb-10">
-          <Button>Enviar</Button>
+          <Link href="/perfil">Enviar</Link>
         </div>
       </form>
     </div>
